@@ -1,0 +1,9 @@
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"asd@asc.com",
+    "password":"   11 12315asdas#   ",
+    "admin":true
+}
