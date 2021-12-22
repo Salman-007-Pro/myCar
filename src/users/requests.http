@@ -7,3 +7,28 @@ Content-Type: application/json
     "password":"   11 12315asdas#   ",
     "admin":true
 }
+
+
+### find all user
+GET http://localhost:3000/auth
+
+
+### find user
+GET http://localhost:3000/auth/3
+
+
+### find all user with a given email
+GET http://localhost:3000/auth?email=asd@asc.com
+
+
+### remove the user
+delete http://localhost:3000/auth/2
+
+
+### update the user
+patch http://localhost:3000/auth/3
+Content-Type: application/json
+
+{
+    "password":"salman123"   
+}
