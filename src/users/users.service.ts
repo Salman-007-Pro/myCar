@@ -19,7 +19,11 @@ export class UsersService {
   }
 
   findOne(id: number) {
-    return this.repo.findOne(id, { cache: { id, milliseconds: 60 * 1000 } });
+    return this.repo.findOne(
+      { id },
+      { cache: { id, milliseconds: 60 * 1000 } },
+    );
+    // return this.repo.findOne({ id });
   }
 
   find(email: string) {

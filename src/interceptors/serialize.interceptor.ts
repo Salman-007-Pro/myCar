@@ -20,7 +20,7 @@ export class SerializeInterceptor implements NestInterceptor {
   constructor(private dto: any) {}
 
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
-    console.log('context', context);
+    // console.log('context', context);
 
     return next.handle().pipe(
       map((data: any) => {
